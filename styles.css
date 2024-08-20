@@ -5,16 +5,23 @@ body {
     padding: 0;
     background: grey;
 }
+.placeholder-square {
+    min-width: 20rem;
+    min-height: 15rem;
+    border: 5px solid rgb(196, 18, 18);
+}
 /* NAV BAR SECTION */
 nav {
     background-color: #333;
+    width: 100%;
 }
 .nav-container {
-    margin: 0 6rem;
+    margin: 0 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 4.75rem;
+    min-height: 4.75rem;
+    /* width: 100%; */
 }
 .nav-logo {
     width: 5rem;
@@ -45,4 +52,27 @@ li {
     text-transform: capitalize;
 }
 /* INFO SECTION */
-.info-container {}
+.info-container {
+    font-family: "Open Sans", sans-serif;
+    margin: 5rem 12rem;
+}
+@media (min-width: 70rem) {
+    .section-item {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.section-title {
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.section-text {
+    text-align: justify;
+    min-width: 20rem;
+    font-size: 1.25rem;
+    color: #e0d9d9;
+}
