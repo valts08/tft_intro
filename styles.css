@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-
+/* Main colors - deep blue and purple */
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +8,9 @@ body {
 .placeholder-square {
     min-width: 20rem;
     min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 5px solid rgb(196, 18, 18);
 }
 /* NAV BAR SECTION */
@@ -21,29 +24,33 @@ nav {
     align-items: center;
     justify-content: space-between;
     min-height: 4.75rem;
-    /* width: 100%; */
 }
-.nav-logo {
+/* .nav-logo {
     width: 5rem;
     height: 2.5rem;
     border: 3px solid #813939;
+} */
+ .logo-image {
+    max-height: 2.5rem;
+ }
+.pengu-image {
+    /* width: 5rem;
+    height: 2.5rem; */
+    border-radius: 3rem;
 }
-
-.links-container {
+.links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.5rem;
-    font-weight: bold;
-    height: 4.75rem;
-}
-.links {
     padding: 0;
     margin: 0;
     font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 5rem;
+    height: 4.75rem;
 }
 li {
-    display: inline;
     list-style-type: none;
 }
 .links a {
@@ -54,7 +61,7 @@ li {
 /* INFO SECTION */
 .info-container {
     font-family: "Open Sans", sans-serif;
-    margin: 5rem 12rem;
+    margin: 5rem 18rem;
 }
 @media (min-width: 70rem) {
     .section-item {
@@ -75,4 +82,7 @@ li {
     min-width: 20rem;
     font-size: 1.25rem;
     color: #e0d9d9;
+}
+.traits-title {
+    /* text-align: ; */
 }
