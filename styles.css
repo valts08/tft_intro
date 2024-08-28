@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 /* Main colors - deep blue and purple */
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -88,4 +91,32 @@ p {
     height: 0;
     border: 2px solid #cdcaca;
     border-radius: 5px;
+}
+.top-btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-width: 3.35rem;
+    min-height: 3.35rem;
+    border-radius: 1.4rem;
+    background: rgb(77, 102, 201);
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    box-shadow: 0 0 1rem rgb(132, 137, 240);
+    visibility: hidden;
+}
+.top-btn:hover {
+    transition: .4s;
+    background: rgb(116, 121, 218);
+}
+.show-btn {
+    transition-timing-function: ease-in-out;
+    transition: .5s;
+    transition-property: visibility;
+    visibility: visible;
+}
+#up-arrow {
+    color: white;
 }
